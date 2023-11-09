@@ -6,5 +6,5 @@ export default function questao(requisição,resposta) {
     }else{
         resposta.status(405).send()
     }
-
+    
 }
