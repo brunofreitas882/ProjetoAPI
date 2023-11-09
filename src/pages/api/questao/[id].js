@@ -4,7 +4,7 @@ export default function questao(requisição,resposta) {
         const id = requisição.query.id
         resposta.status(200).json({id,enuciado: "Qual é a sua cor preferida?",resposta: ['Azul', 'Verde', 'Branco', 'Preto', 'Vermelho', 'Amarelo']})
     }else{
-        resposta.status(405).send()
+        resposta.status(405).send()// A URL Existe, mas o método não é permitido
     }
     
 }
